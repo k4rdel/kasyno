@@ -42,6 +42,7 @@ body{
 @media (max-width: 1000px){
     #diVstanKonta{
         height: 30%;
+        width: auto;
         padding-top: 15px;
     }
     #stanKonta{
@@ -142,10 +143,9 @@ body{
 }
 
 /* prawo */
-
-#prawo img{
+#prawo img {
     float: right;
-    height: 60px;
+    height: 35px;
     padding: 10px;
     width: auto;
 }

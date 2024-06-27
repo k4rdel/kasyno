@@ -68,7 +68,7 @@ function wygrana(){
                 }
 
                 counter++;
-                if (counter === 15) {
+                if (counter === 10) {
                         clearInterval(interval);
                         elements.forEach(function(element) {
                                 element.style.backgroundColor = "rgba(255, 0, 0, 0.151)";
