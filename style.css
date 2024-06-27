@@ -53,6 +53,17 @@ body{
     font-size: 450%;
 }
 
+@media (max-width: 1000px){
+    #diVstanKonta{
+        height: 30%;
+        padding-top: 15px;
+    }
+    #stanKonta{
+        font-size: 50px;
+        line-height: 0.5;
+    }
+}
+
 /* srodek */
 
 #maszyna{
@@ -61,6 +72,12 @@ body{
     width: 100vh;
     height: 75vh;
     margin: 0 auto;
+}
+
+@media (max-width: 1000px){
+    #maszyna img{
+        height: 70px;
+    }
 }
 
 .czerwony{
@@ -106,6 +123,26 @@ body{
     width: 150px;
     height: 100px;
     font-size: 250%;
+}
+
+@media (max-width: 1000px){
+    #czescStawki img{
+        height: 50%;
+        width: auto;
+    }
+    #stawka{
+        font-size: 150%;
+    }
+    #wygrana h1{
+        font-size: 40px;
+        line-height: 0.7;
+    }
+    #start{
+        width: 90px;
+        height: 60px;
+        font-size: 150%;
+        margin-top: -6%;
+    }
 }
 
 /* prawo */
