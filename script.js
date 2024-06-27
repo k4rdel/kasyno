@@ -95,6 +95,7 @@ function ustaw(x){
         button.addEventListener("animationend", function() {
                 button.classList.remove("animate__animated", "animate__flipInX");
         });
+        
         if(x == 4){
                 pierwszy = losowa;
         }

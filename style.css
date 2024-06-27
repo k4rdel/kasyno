@@ -24,6 +24,7 @@ body{
     text-align: center;
     background-color: #0a0a0aa6;
     height: 20%;
+    width: 75%;
     padding: 4%;
     border-radius: 25px;
 }
@@ -31,23 +32,29 @@ body{
 #diVstanKonta p{
     color: #ffcf30;
     font-weight: bold;
+    font-size: 125%;
 }
 
 #stanKonta{
     color: white;
     text-shadow: 0;
     font-size: 450%;
+    line-height: 0.5;
 }
 
 @media (max-width: 1000px){
     #diVstanKonta{
         height: 30%;
         width: auto;
-        padding-top: 15px;
+        padding-top: 10px;
     }
     #stanKonta{
         font-size: 50px;
-        line-height: 0.5;
+    }
+    #diVstanKonta p{
+        color: #ffcf30;
+        font-weight: bold;
+        font-size: 75%;
     }
 }
 
@@ -56,14 +63,18 @@ body{
 #maszyna{
     background-color: rgb(26, 26, 26);
     border-radius: 25px 25px 0 0;
-    width: 100vh;
-    height: 75vh;
+    width: 85vh;
+    height: 65vh;
     margin: 0 auto;
+}
+
+#maszyna img{
+    height: 70%;
 }
 
 @media (max-width: 1000px){
     #maszyna img{
-        height: 70px;
+        height: 60px;
     }
 }
 
@@ -79,10 +90,10 @@ body{
 
 #podMaszyna{
     background-color: rgb(34, 34, 34);
-    width: 100vh;
-    height: 20vh;
+    width: 85vh;
+    height: 15vh;
     margin: 0 auto;
-    padding-top: 4%;
+    padding-top: 2%;
     border-radius: 0 0 25px 25px;
     text-align: center;
 }
@@ -93,23 +104,25 @@ body{
 
 #podMaszyna p{
     color: #ffcf30;
-    font-size: 150%;
-    line-height: 0;
+    font-size: 125%;
     font-weight: bold;
 }
 
 #stawka{
-    font-size: 60px;
+    font-size: 50px;
+    line-height: 0.5;
 }
 
 #czescStawki img{
     height: 30%;
     width: auto;
-    margin-left: 60%;
+    margin-left: 90%;
+    margin-top: 25%;
 }
 
 #wygrana h1{
-    font-size: 70px;
+    font-size: 60px;
+    line-height: 0.5;
 }
 
 #start{
@@ -120,25 +133,25 @@ body{
 
 @media (max-width: 1000px){
     #czescStawki img{
-        display: block;
-        margin: 0 auto;
+        margin-left: 10px;
+        margin-top: -10px;
     }
     #stawka{
-        font-size: 30px;
-        line-height: 0.7;
+        font-size: 20px;
+        line-height: 0;
     }
     #wygrana h1{
-        font-size: 40px;
-        line-height: 0.7;
+        font-size: 30px;
+        line-height: 0;
     }
     #start{
-        width: 90px;
-        height: 60px;
-        font-size: 150%;
-        margin-top: -6%;
+        width: 75px;
+        height: 45px;
+        font-size: 130%;
+        margin-top: 0;
     }
     #podMaszyna p{
-        font-size: 100%;
+        font-size: 50%;
     }
 }
 
