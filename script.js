@@ -1,4 +1,5 @@
 document.onselectstart = function(){return false;};
+document.documentElement.style.setProperty('--animate-duration', '.5s');
 // Check if the user has a saved account balance in cookies
 var savedBalance = getCookie("accountBalance");
 if (savedBalance) {
@@ -87,6 +88,13 @@ function rnd(max) {
 function ustaw(x){
         var losowa = rnd(4);
         document.getElementById("img" + x).src = losowa + ".png";
+
+        var button = document.getElementById("img" + x);
+        button.classList.add("animate__animated", "animate__flipInX");
+
+        button.addEventListener("animationend", function() {
+                button.classList.remove("animate__animated", "animate__flipInX");
+        });
         if(x == 4){
                 pierwszy = losowa;
         }

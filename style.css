@@ -1,35 +1,21 @@
-/* Ukryj zawartość strony dla orientacji pionowej */
-@media screen and (orientation: portrait) {
-    body {
-        display: none;
-    }
-}
-
-@media screen and (orientation: portrait) {
-    .komunikat-obrotu {
-        display: block;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: white;
-        z-index: 1000;
-        text-align: center;
-        padding-top: 50vh;
-        font-size: 24px;
-        color: black;
-    }
-    
-    body > *:not(.komunikat-obrotu) {
-        display: none;
-    }
-}
-
 body{
     background-color: #3D3D3B;
     color: white;
     padding: 5px;
+}
+
+@media (orientation: portrait) { 
+    .container-fluid { 
+        display: none; 
+    }
+    body{
+        display: block;
+        background-color: black;
+        background-image: url(https://assets-v2.lottiefiles.com/a/685770f2-1168-11ee-8e72-c72882ce9865/CQuMaUaImx.gif);
+        background-repeat:no-repeat;
+        background-attachment:fixed;
+        background-position:center;
+    }
 }
 
 /* lewo */
@@ -106,13 +92,19 @@ body{
 
 #podMaszyna p{
     color: #ffcf30;
+    font-size: 150%;
     line-height: 0;
     font-weight: bold;
+}
+
+#stawka{
+    font-size: 60px;
 }
 
 #czescStawki img{
     height: 30%;
     width: auto;
+    margin-left: 60%;
 }
 
 #wygrana h1{
@@ -127,11 +119,12 @@ body{
 
 @media (max-width: 1000px){
     #czescStawki img{
-        height: 50%;
-        width: auto;
+        display: block;
+        margin: 0 auto;
     }
     #stawka{
-        font-size: 150%;
+        font-size: 30px;
+        line-height: 0.7;
     }
     #wygrana h1{
         font-size: 40px;
@@ -142,6 +135,9 @@ body{
         height: 60px;
         font-size: 150%;
         margin-top: -6%;
+    }
+    #podMaszyna p{
+        font-size: 100%;
     }
 }
 
