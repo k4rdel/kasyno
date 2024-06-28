@@ -20,6 +20,9 @@ document.getElementById("stanKonta").innerHTML = stanKonta + "$";
 
 function stawka(x){
         let stawki = [0.5, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        for (let i = 11; i <= 500; i++) {
+            stawki.push(i);
+        }
         var stawka = stawki[x];
         document.getElementById("stawka").innerHTML = stawka + "$";
         return stawka;
@@ -47,6 +50,8 @@ function wygrana(){
         document.getElementById("kwotaWygranej").innerHTML = iloscWygranej + "$";
         
         // efekty
+        var audio = new Audio('jackpot.mp3');
+        audio.play();
         var elements = document.querySelectorAll(".czerwony");
         var counter = 0;
         var interval = setInterval(function() {
@@ -108,28 +113,32 @@ function ustaw(x){
 }
 
 function start(){
-        stanKonta -= stawka(ilosc);
-        document.getElementById("stanKonta").innerHTML = stanKonta + "$";
-        document.getElementById("kwotaWygranej").innerHTML = "0$";
+        if (stanKonta >= stawka(ilosc)) {
+                stanKonta -= stawka(ilosc);
+                document.getElementById("stanKonta").innerHTML = stanKonta + "$";
+                document.getElementById("kwotaWygranej").innerHTML = "0$";
 
-        ustaw(1);
-        ustaw(2);
-        ustaw(3);
-        ustaw(4);
-        ustaw(5);
-        ustaw(6);
-        ustaw(7);
-        ustaw(8);
-        ustaw(9);
+                ustaw(1);
+                ustaw(2);
+                ustaw(3);
+                ustaw(4);
+                ustaw(5);
+                ustaw(6);
+                ustaw(7);
+                ustaw(8);
+                ustaw(9);
 
-        setTimeout(function() {
-                if(pierwszy == drugi && drugi == trzeci && trzeci == pierwszy){
-                        wygrana();
-                }
-        }, 100);
+                setTimeout(function() {
+                        if (pierwszy == drugi && drugi == trzeci && trzeci == pierwszy) {
+                                wygrana();
+                        }
+                }, 100);
 
-        // Save the account balance in cookies
-        setCookie("accountBalance", stanKonta, 365);
+                // Save the account balance in cookies
+                setCookie("accountBalance", stanKonta, 365);
+        } else {
+                alert("Insufficient balance to place the bet.");
+        }
 }
 
 // Function to get a cookie value by name
