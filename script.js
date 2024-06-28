@@ -19,8 +19,8 @@ var iloscWygranej = 0;
 document.getElementById("stanKonta").innerHTML = stanKonta + "$";
 
 function stawka(x){
-        let stawki = [0.5, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-        for (let i = 11; i <= 500; i++) {
+        let stawki = [0.5, 1];
+        for (let i = 1; i <= 500; i++) {
             stawki.push(i);
         }
         var stawka = stawki[x];
