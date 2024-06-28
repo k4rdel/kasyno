@@ -23,6 +23,7 @@ function stawka(x){
         for (let i = 1; i <= 500; i++) {
             stawki.push(i);
         }
+        
         var stawka = stawki[x];
         document.getElementById("stawka").innerHTML = stawka + "$";
         return stawka;
