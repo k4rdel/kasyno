@@ -30,7 +30,7 @@ body{
 #diVstanKonta{
     text-align: center;
     background-color: #0a0a0aa6;
-    height: 20%;
+    height: 16vh;
     width: 75%;
     padding: 4%;
     border-radius: 25px;
@@ -49,14 +49,14 @@ body{
     line-height: 0.5;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1400px){
     #diVstanKonta{
-        height: 30%;
+        height: 25vh;
         width: auto;
         padding-top: 10px;
     }
     #stanKonta{
-        font-size: 50px;
+        font-size: 250%;
     }
     #diVstanKonta p{
         color: #ffcf30;
@@ -77,12 +77,6 @@ body{
 
 #maszyna img{
     height: 70%;
-}
-
-@media (max-width: 1000px){
-    #maszyna img{
-        height: 60px;
-    }
 }
 
 .czerwony{
@@ -115,6 +109,18 @@ body{
     font-weight: bold;
 }
 
+@media (max-width: 1400px){
+    #maszyna img{
+        height: 15vh;
+    }
+    #maszyna, #podMaszyna{
+        width: 100%;
+    }
+    #podMaszyna{
+        height: 17vh;
+    }
+}
+
 #stawka{
     font-size: 50px;
     line-height: 0.5;
@@ -138,17 +144,17 @@ body{
     font-size: 250%;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1400px){
     #czescStawki img{
         margin-left: 10px;
         margin-top: -10px;
     }
     #stawka{
-        font-size: 20px;
+        font-size: 150%;
         line-height: 0;
     }
     #wygrana h1{
-        font-size: 30px;
+        font-size: 180%;
         line-height: 0;
     }
     #start{
@@ -177,63 +183,4 @@ body{
 	border-radius: 5px;
 	text-align:center;
 	box-shadow: 0 0 25px #a5070760;
-}
-
-@media (max-width: 1000px) {
-    body {
-        padding: 2%;
-    }
-
-    #diVstanKonta {
-        height: 30%;
-        width: auto;
-        padding-top: 10px;
-    }
-
-    #stanKonta {
-        font-size: 50px;
-    }
-
-    #diVstanKonta p {
-        font-size: 75%;
-    }
-
-    #maszyna {
-        width: 55vw;
-        height: 65vh;
-    }
-
-    #maszyna img {
-        height: 60px;
-    }
-
-    #podMaszyna {
-        width: 55vw;
-        height: 15vh;
-        padding-top: 2%;
-    }
-
-    #stawka {
-        font-size: 20px;
-    }
-
-    #czescStawki img {
-        margin-left: 10px;
-        margin-top: -10px;
-    }
-
-    #wygrana h1 {
-        font-size: 30px;
-    }
-
-    #start {
-        width: 75px;
-        height: 45px;
-        font-size: 130%;
-        margin-top: 0;
-    }
-
-    #podMaszyna p {
-        font-size: 50%;
-    }
 }
