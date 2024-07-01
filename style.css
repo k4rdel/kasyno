@@ -178,3 +178,62 @@ body{
 	text-align:center;
 	box-shadow: 0 0 25px #a5070760;
 }
+
+@media (max-width: 1000px) {
+    body {
+        padding: 2%;
+    }
+
+    #diVstanKonta {
+        height: 30%;
+        width: auto;
+        padding-top: 10px;
+    }
+
+    #stanKonta {
+        font-size: 50px;
+    }
+
+    #diVstanKonta p {
+        font-size: 75%;
+    }
+
+    #maszyna {
+        width: 55vw;
+        height: 65vh;
+    }
+
+    #maszyna img {
+        height: 60px;
+    }
+
+    #podMaszyna {
+        width: 55vw;
+        height: 15vh;
+        padding-top: 2%;
+    }
+
+    #stawka {
+        font-size: 20px;
+    }
+
+    #czescStawki img {
+        margin-left: 10px;
+        margin-top: -10px;
+    }
+
+    #wygrana h1 {
+        font-size: 30px;
+    }
+
+    #start {
+        width: 75px;
+        height: 45px;
+        font-size: 130%;
+        margin-top: 0;
+    }
+
+    #podMaszyna p {
+        font-size: 50%;
+    }
+}
